@@ -11,6 +11,7 @@
             display: flex; /* Flexbox para layout */
             flex-direction: column; /* Coloca itens em coluna */
             align-items: center; /* Centraliza horizontalmente */
+            position: relative; /* Para posicionamento do balão */
         }
         img {
             max-width: 100%; /* Imagem responsiva */
@@ -22,13 +23,27 @@
             position: fixed; /* Fixa o ícone no canto inferior direito */
             bottom: 20px; /* Distância do fundo */
             right: 20px; /* Distância da direita */
-            width: 50px; /* Tamanho do ícone */
-            height: 50px; /* Tamanho do ícone */
+            width: 65px; /* Tamanho do ícone (30% maior) */
+            height: 65px; /* Tamanho do ícone (30% maior) */
+        }
+        .message-bubble {
+            position: fixed; /* Fixa a mensagem no canto inferior direito */
+            bottom: 90px; /* Acima do ícone */
+            right: 30px; /* Distância da direita */
+            background-color: white; /* Fundo branco */
+            color: black; /* Texto preto */
+            padding: 5px 10px; /* Espaçamento interno */
+            border-radius: 5px; /* Cantos arredondados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+            font-size: 14px; /* Tamanho da fonte */
+            display: flex; /* Flexbox para centralizar texto */
+            align-items: center; /* Centraliza verticalmente */
         }
     </style>
 </head>
 <body>
     <img src="home.png" alt="Descrição da Imagem">
+    <div class="message-bubble">Fale comigo!</div>
     <a href="https://wa.me/5551999033189?text=Ol%C3%A1%20vi%20o%20seu%20site%2C%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">
         <img class="whatsapp-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
