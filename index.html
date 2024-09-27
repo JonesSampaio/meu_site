@@ -7,21 +7,19 @@
     <style>
         body {
             background-color: black; /* Fundo preto */
-            display: flex; /* Flexbox para centralizar */
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: center; /* Centraliza verticalmente */
-            height: 100vh; /* 100% da altura da janela */
             margin: 0; /* Remove margens padrão */
-            flex-direction: column; /* Coloca os itens em coluna */
+            display: flex; /* Flexbox para layout */
+            flex-direction: column; /* Coloca itens em coluna */
+            align-items: center; /* Centraliza horizontalmente */
         }
         img {
-            max-height: 80%; /* Limita a altura máxima da imagem */
             max-width: 100%; /* Imagem responsiva */
             height: auto; /* Mantém a proporção da imagem */
+            margin-top: 0; /* Remove margem superior */
             margin-bottom: 20px; /* Margem abaixo da imagem */
         }
         .whatsapp-icon {
-            position: absolute; /* Para posicionar no canto inferior direito */
+            position: fixed; /* Fixa o ícone no canto inferior direito */
             bottom: 20px; /* Distância do fundo */
             right: 20px; /* Distância da direita */
             width: 50px; /* Tamanho do ícone */
