@@ -7,18 +7,32 @@
     <style>
         body {
             background-color: black; /* Fundo preto */
+            display: flex; /* Flexbox para centralizar */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* 100% da altura da janela */
             margin: 0; /* Remove margens padrão */
-            padding: 0; /* Remove padding padrão */
+            flex-direction: column; /* Coloca os itens em coluna */
         }
         img {
-            width: 100%; /* Imagem responsiva */
+            max-height: 80%; /* Limita a altura máxima da imagem */
+            max-width: 100%; /* Imagem responsiva */
             height: auto; /* Mantém a proporção da imagem */
-            margin-top: 10px; /* Espaço no topo */
-            display: block; /* Para remover o espaço abaixo da imagem */
+            margin-bottom: 20px; /* Margem abaixo da imagem */
+        }
+        .whatsapp-icon {
+            position: absolute; /* Para posicionar no canto inferior direito */
+            bottom: 20px; /* Distância do fundo */
+            right: 20px; /* Distância da direita */
+            width: 50px; /* Tamanho do ícone */
+            height: 50px; /* Tamanho do ícone */
         }
     </style>
 </head>
 <body>
     <img src="home.png" alt="Descrição da Imagem">
+    <a href="https://wa.me/5551999033189?text=Ol%C3%A1%20vi%20o%20seu%20site%2C%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">
+        <img class="whatsapp-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
 </body>
 </html>
